@@ -9,7 +9,7 @@ function App() {
       <NavBar />
       <LogoutButton />
       <h4>Hello heroku!!!</h4>
-      <h1>{window.location.origin}</h1>
+      <Profile />
     </div>
   );
 }
