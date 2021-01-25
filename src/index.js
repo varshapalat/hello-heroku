@@ -8,8 +8,8 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <Auth0Provider
     domain="demo-app-stage.eu.auth0.com"
-    clientId="05UHdhZN45yheyzjmh3GyuNeVCwySWJ2"
-    redirectUri={"https://dev-heroku-app-varsha.herokuapp.com/profile"}
+    clientId="TKumTUUDywDz0scMIUpBKnFw3aajNHC9"
+    redirectUri={window.location.origin}
   >
     <App />
   </Auth0Provider>,
