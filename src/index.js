@@ -9,7 +9,7 @@ ReactDOM.render(
   <Auth0Provider
     domain="demo-app-stage.eu.auth0.com"
     clientId="05UHdhZN45yheyzjmh3GyuNeVCwySWJ2"
-    redirectUri={"https://dev-heroku-app-varsha.herokuapp.com/profile"}
+    redirectUri={"https://dev-heroku-app-varsha.herokuapp.com"}
   >
     <App />
   </Auth0Provider>,
