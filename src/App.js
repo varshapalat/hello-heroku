@@ -1,30 +1,22 @@
 import './App.css';
 import LogoutButton from "./components/Logout";
 import Profile from "./components/Profile";
-import { useAuth0 } from "@auth0/auth0-react";
-import { useEffect } from "react";
+import LogoutPage from "./components/LogoutPage"
+import {BrowserRouter as Router, Route} from "react-router-dom"
 
 function App() {
-  const { loginWithRedirect, isLoading, isAuthenticated, user } = useAuth0();
-
-  useEffect(() => {
-    (async function login() {
-      if (!isLoading && !user) {
-        await loginWithRedirect({ connection: "TrialAppDevConnection" });
-      }
-    })();
-  }, [isLoading])
-
-  if (!isAuthenticated)
-    return <div>Authenticating</div>
+  
 
   return (
+    <Router>
     <div className="App">
       <LogoutButton />
       <h4>Hello Thennarasu!!!</h4>
       <h5>{window.location.origin}</h5>
-      <Profile />
+      <Route path="/" exact component={Profile} />
+      <Route path="/logout" component={LogoutPage} />
     </div>
+    </Router>
   );
 }
 
