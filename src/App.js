@@ -1,7 +1,6 @@
 import './App.css';
 import LogoutButton from "./components/Logout";
 import Profile from "./components/Profile";
-import LogoutPage from "./components/LogoutPage"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 
 function App() {
