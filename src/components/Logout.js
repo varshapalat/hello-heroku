@@ -5,7 +5,7 @@ const LogoutButton = () => {
   const { logout } = useAuth0();
 
   return (
-    <button onClick={() => logout({ returnTo: 'https://dev-heroku-app-varsha.herokuapp.com/logout?federated', federated: true})}>
+    <button onClick={() => logout({ returnTo: 'https://dev-heroku-app-varsha.herokuapp.com', federated: true})}>
       Log Out
     </button>
   );

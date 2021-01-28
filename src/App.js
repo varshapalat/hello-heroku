@@ -14,7 +14,6 @@ function App() {
       <h4>Hello Thennarasu!!!</h4>
       <h5>{window.location.origin}</h5>
       <Route path="/" exact component={Profile} />
-      <Route path="/logout" component={LogoutPage} />
     </div>
     </Router>
   );
