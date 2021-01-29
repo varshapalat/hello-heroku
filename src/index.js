@@ -10,6 +10,7 @@ ReactDOM.render(
     domain="demo-app-stage.eu.auth0.com"
     clientId="05UHdhZN45yheyzjmh3GyuNeVCwySWJ2"
     redirectUri={"https://dev-heroku-app-varsha.herokuapp.com"}
+    audience="https://demo-app-stage.eu.auth0.com/api/v2/"
   >
     <App />
   </Auth0Provider>,
