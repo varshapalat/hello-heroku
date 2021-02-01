@@ -23,16 +23,10 @@ const Profile = () => {
   return (
     isAuthenticated && (
       <div>
-        <div>Profile section</div>
-        <img src={user.picture} alt={user.name} />
+        <h2>User Profile</h2>
         <h2>{user.name}</h2>
         <h3>{user.nickname}</h3>
-        <h3>{user.name}</h3>
-        <h3>{user.picture}</h3>
-        <h3>{user.locale}</h3>
-        <h3>{user.updated_at}</h3>
         <h3>{user.email}</h3>
-        <h3>{user.email_verified}</h3>
         <h3>{user.sub}</h3>
         <p>{user.email}</p>
       </div>
